@@ -7,3 +7,13 @@ h1,
 h2 {
     font-family: "Lato";
 }
+
+body {
+    margin: 0;
+}
+
+article {
+    /* commentet, így kell készíteni */
+    width: 700px;
+    margin: 0 auto;
+}
