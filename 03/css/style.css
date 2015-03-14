@@ -1,0 +1,57 @@
+p {
+    font-family: "Merriweather";
+    color: #444;
+    line-height: 1.4;
+}
+
+
+h1,
+h2 {
+    font-family: "Lato";
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+h1 {
+    font-size: 36px;
+    color: #444;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #999;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+body {
+    margin: 0;
+
+}
+
+article {
+    /* commentet, így kell készíteni */
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+  color: #444;
+}
+
+a:visited {
+  color: yellow;
+}
+
+a:hover {
+  color: pink;
+}
