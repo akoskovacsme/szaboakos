@@ -1,0 +1,19 @@
+body {
+    background-image: url(../images/header_bg.jpg);
+    background-color: #dcd6cd;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff  ;
+
+}
+
+h1{
+    width: 750px;
+    height: 366px;
+    margin: 30 auto 120px auto;
+    background-image:
+    url(../images/logo.png);
+    background-size: cover;
+    text-indent: 100%;
+    white-space: nowrap;
+}
