@@ -1,6 +1,7 @@
 .container{
      position: relative;
-     margin: auto;
+     left: 550px;
+     top: 50px;
 }
 
 .head{
@@ -23,7 +24,7 @@
 }
 
 
-.eye-left:after{
+.eye-left{
     position: absolute;
     left: 18px;
     top: 23px;
@@ -34,7 +35,7 @@
     background-color: #ffffff;
 }
 
-.eye-right:after{
+.eye-right{
     position: absolute;
     left: 67px;
     top: 23px;
