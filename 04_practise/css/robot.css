@@ -1,7 +1,4 @@
-.container{
-     position: relative;
-     margin: auto;
-}
+
 
 .head{
     position: relative;
@@ -14,9 +11,9 @@
 .head:before{
     position: absolute;
     left: 10px;
-    top: 16px;
+    top: 15px;
     width: 80px;
-    height: 28px;
+    height: 30px;
     content: '';
     border-radius: 22px;
     background-color: #362E50;
@@ -25,8 +22,8 @@
 
 .eye-left:after{
     position: absolute;
-    left: 18px;
-    top: 23px;
+    left: 25px;
+    top: 30px;
     width: 15px;
     height: 15px;
     content: '';
@@ -36,8 +33,8 @@
 
 .eye-right:after{
     position: absolute;
-    left: 67px;
-    top: 23px;
+    left: 76px;
+    top: 30px;
     width: 15px;
     height: 15px;
     content: '';
@@ -46,41 +43,45 @@
 }
 
 .arm01{
-  width: 10px;
-  height: 60px;
+  width: 60px;
+  height: 10px;
   border: 3px solid #362E50;
   border-radius: 20px;
+  transform: rotate(90deg);
   position: absolute;
-  top: 40px;
-  left: 17px;
+  top: 60px;
+  left: 1px;
 }
 
 .arm02{
-  width: 2px;
-  height: 60px;
+  width: 60px;
+  height: 4px;
   border: 3px solid #362E50;
   border-radius: 20px;
+  transform: rotate(90deg);
   position: absolute;
-  top: 20px;
-  left: 34px;
+  top: 50px;
+  left: 16px;
 }
 
 .arm03{
-  width: 2px;
-  height: 60px;
+  width: 60px;
+  height: 4px;
   border: 3px solid #362E50;
   border-radius: 20px;
+  transform: rotate(90deg);
   position: absolute;
-  top: 50px;
-  left: 56px;
+  top: 80px;
+  left: 36px;
 }
 
 .arm04{
-  width: 10px;
-  height: 60px;
+  width: 60px;
+  height: 10px;
   border: 3px solid #362E50;
   border-radius: 20px;
+  transform: rotate(90deg);
   position: absolute;
-  top: 14px;
-  left: 67px;
+  top: 44px;
+  left: 52px;
 }
