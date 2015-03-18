@@ -3,17 +3,35 @@ body {
     background-color: #dcd6cd;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #ffffff  ;
-
+    color: #ffffff;
 }
+
+/*Logo*/
 
 h1{
     width: 750px;
     height: 366px;
-    margin: 30 auto 120px auto;
+    margin: 50px auto 50px auto;
     background-image:
     url(../images/logo.png);
     background-size: cover;
     text-indent: 100%;
     white-space: nowrap;
+    align: center;
+}
+
+/*Vimeo*/
+
+div.vimeo-video {
+    text-align: center;
+
+}
+
+
+/*Gallery*/
+
+div.gallery {
+    max-width: 934px;
+    margin: 50px auto auto auto;
+
 }
