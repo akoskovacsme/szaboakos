@@ -1,0 +1,42 @@
+/*
+
+*{
+  background-color: yellow;
+  color: red;
+}
+
+*/
+
+h1{
+  background-color: yellow;
+  color: red;
+}
+
+.big{
+  font-size: 120%;
+}
+
+
+span.big{
+  color: green;
+}
+
+#elsope{
+  font-weight: bold;
+}
+
+span#nagyonbig.big{
+  text-decoration: line-through;
+}
+
+ul{
+  color: red;
+}
+
+li{
+  background: pink;
+}
+
+li:hover{
+  font-weight: bold;
+}
