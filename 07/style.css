@@ -1,4 +1,4 @@
-div{
+.random{
   background: black;
   width: 200px;
   height: 200px;
@@ -8,6 +8,7 @@ div{
   padding: 10px;
   box-sizing: border-box;
   /* box-sizing: content-box; */
+
 }
 
 span{
@@ -17,13 +18,56 @@ span{
 }
 
 ul{
+
   list-style; none;
+  /*margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;*/
   margin: 0;
   padding: 0;
 }
 
 li{
   background: orange;
+  display: inline;
   margin: 5px;
   /*display: inline;*/
+}
+
+li.titkos{
+  /*display: none;*/
+  visibility: visible;
+}
+
+
+.kulso{
+  background: purple;
+  /* padding: 5px 10px 20px 25px; /* t r b l*/ */
+
+  padding: 5px 10px 20px; /* t rl b*/
+  padding: 5px 10px; /*tb rl*/
+  padding: 5px; /*tbrl*/
+
+/*
+  font-family: verdana;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 2;
+*/
+
+  font: italic bold 20px/2 verdana;
+
+  background-color: #234567;
+  background-image: url(kep.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  backgorund-attachment: fixed;
+
+  background: 
+}
+
+.belso{
+  background: pink;
 }
