@@ -1,0 +1,187 @@
+
+
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/Montserrat-Light-webfont.eot');
+    src: url('../fonts/Montserrat-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Montserrat-Light-webfont.woff2') format('woff2'),
+         url('../fonts/Montserrat-Light-webfont.woff') format('woff'),
+         url('../fonts/Montserrat-Light-webfont.ttf') format('truetype'),
+         url('../fonts/Montserrat-Light-webfont.svg#montserratlight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/Montserrat-Regular-webfont.eot');
+    src: url('../fonts/Montserrat-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Montserrat-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Montserrat-Regular-webfont.woff') format('woff'),
+         url('../fonts/Montserrat-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Montserrat-Regular-webfont.svg#montserratregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #dcd6cd;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: 'montserrat';
+    font-weight: 300;
+    background: #3e2955; /* Old browsers */
+    background: -moz-linear-gradient(top,  #3e2955 0%, #553562 41%, #ddd6cc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3e2955), color-stop(41%,#553562), color-stop(100%,#ddd6cc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #3e2955 0%,#553562 41%,#ddd6cc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #3e2955 0%,#553562 41%,#ddd6cc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #3e2955 0%,#553562 41%,#ddd6cc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #3e2955 0%,#553562 41%,#ddd6cc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e2955', endColorstr='#ddd6cc',GradientType=0 ); /* IE6-9 */
+    backgorund-size: 100% 1000px;
+
+
+}
+
+h1{
+    width: 750px;
+    height: 366px;
+    margin: 30px auto 120px auto;
+    background-image:
+    url(../images/logo.png);
+    background-size: cover;
+    text-indent: 100%;
+    white-space: nowrap;
+    font-family: 'montserrat';
+    font-weight: 300;
+}
+
+h2{
+    font-family: 'montserrat';
+    font-weight: 400;
+}
+
+.triangle{
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    width: 40px;
+    height: 50px;
+    margin-left: 391px;
+    z-index: -1;
+}
+
+.t02{
+    top: 350px;
+    width: 83px;
+    height: 93px;
+    margin-left: -490px;
+}
+
+.t03{
+    top: 150px;
+    width: 83px;
+    height: 93px;
+    margin-left: 530px;
+}
+
+.t04{
+    top: 30px;
+    width: 83px;
+    height: 93px;
+    margin-left: -400px;
+}
+
+.thumbnail-list,
+.thumbnail-list-02{
+    width: 1000px;
+    margin: 0 auto;
+
+
+}
+
+
+}
+
+.thumbnail-list img{
+    display: block;
+}
+
+.thumbnail-list-02 li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.thumbnail-list-02 img{
+    display: block;
+    font-size: 16px;
+}
+
+.thumbnail-list-02 {
+    font-size: 0;
+
+}
+
+.thumbnail-list li{
+    display: block;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+.thumbnail-list li:nth-child(4n){
+    margin-right: 0;
+}
+
+.thumbnail-list-02 li:nth-child(4n){
+    margin-right: 0;
+}
+
+.thumbnail-list-02 li:nth-child(4n+1){
+    margin-left: 0;
+}
+
+ul.thumbnail-list:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+h2{
+    clear: left;
+}
+
+button{
+    text-transform: uppercase;
+    background-color: #796F8F;
+    border: none;
+    color: #dcd6cd;
+    font-family: 'montserrat';
+    font-size: 22px;
+    letter-spacing: 5px;
+    font-weight: 300;
+    width: 230px;
+    height: 50px;
+    padding: 0;
+    margin: auto;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+button:after{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    content: '';
+    margin-left: -9px;
+    border-style: solid;
+    border-color: #796F8F;
+    border-width: 13px 9px 0;
+    width: 0px;
+    height: 0px;
+
+}
