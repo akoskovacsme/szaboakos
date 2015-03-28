@@ -23,7 +23,7 @@
 .eye-left:after{
     position: absolute;
     left: 25px;
-    top: 30px;
+    top: 46px;
     width: 15px;
     height: 15px;
     content: '';
@@ -34,7 +34,7 @@
 .eye-right:after{
     position: absolute;
     left: 76px;
-    top: 30px;
+    top:46px;
     width: 15px;
     height: 15px;
     content: '';
@@ -49,7 +49,7 @@
   border-radius: 20px;
   transform: rotate(90deg);
   position: absolute;
-  top: 60px;
+  top: 75px;
   left: 1px;
 }
 
@@ -60,7 +60,7 @@
   border-radius: 20px;
   transform: rotate(90deg);
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 16px;
 }
 
@@ -71,7 +71,7 @@
   border-radius: 20px;
   transform: rotate(90deg);
   position: absolute;
-  top: 80px;
+  top: 88px;
   left: 36px;
 }
 
@@ -82,6 +82,6 @@
   border-radius: 20px;
   transform: rotate(90deg);
   position: absolute;
-  top: 44px;
+  top: 64px;
   left: 52px;
 }
