@@ -186,3 +186,19 @@ button:after{
     margin-left: -4px;
 
 }
+
+
+
+a:after{
+  content: ' [' attr(href) ']';
+}
+
+button{
+
+    box-shadow: 0px 0px 10px 0px red;
+}
+
+
+button:hover{
+  box-shadow: 0 0 10px black;
+}
