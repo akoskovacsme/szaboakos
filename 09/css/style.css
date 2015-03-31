@@ -40,7 +40,7 @@ body {
     background: -ms-linear-gradient(top,  #3e2955 0%,#553562 41%,#ddd6cc 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #3e2955 0%,#553562 41%,#ddd6cc 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e2955', endColorstr='#ddd6cc',GradientType=0 ); /* IE6-9 */
-    backgorund-size: 100% 1000px;
+    backgorund-size: 100px 100px,100% 1000px;
 
 
 }
@@ -173,15 +173,16 @@ button{
 }
 
 button:after{
-    position: absolute;
-    top: 100%;
-    left: 50%;
     content: '';
-    margin-left: -9px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 6px 4px 0;
     border-style: solid;
-    border-color: #796F8F;
-    border-width: 13px 9px 0;
-    width: 0px;
-    height: 0px;
+    border-color: #76728e transparent;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-left: -4px;
 
 }
