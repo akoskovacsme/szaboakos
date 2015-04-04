@@ -3,22 +3,158 @@
 
 
   <head>
+  <script>
+
+/***********************************************
+* Refresh page Script- (c) Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+function refreshpage(interval, countdownel, totalel){
+var countdownel = document.getElementById(countdownel)
+var totalel = document.getElementById(totalel)
+var timeleft = interval+1
+var countdowntimer
+
+function countdown(){
+  timeleft--
+  countdownel.innerHTML = timeleft
+  if (timeleft == 0){
+    clearTimeout(countdowntimer)
+    window.location.reload()
+  }
+  countdowntimer = setTimeout(function(){
+    countdown()
+  }, 1000)
+}
+
+countdown()
+}
+
+window.onload = function(){
+refreshpage(3, "countdown") // refreshpage(duration_in_seconds, id_of_element_to_show_result)
+}
+
+</script>
+
+<div class="next" >Next <a href="javascript:window.location.reload()">refresh</a> in <b id="countdown"></b> seconds</div>
+
+------------------------------------------
+
+
     <meta charset="utf-8">
-
-    <!-- Auto Refresh -->
-    <meta http-equiv=refresh content="5">
-
-    <title>11. óra</title>
-
-
+    <title>Form gyakorlat</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
-
   <body>
+    <h1>Profil</h1>
 
+    <form method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Személyes adatok</legend>
 
+      <div>
+        <label for="name-inp">Név <span>*</span></label>
+        <input type="text" id="name-inp" name="name" required />
+      </div>
 
+      <div>
+        <label for="birthdate-inp">Születési éved</label>
+        <input type="text" id="birthdate-inp" name="birthyear" maxlength="4" pattern="[0-9]" placeholder="pl. 1984"/>
+      </div>
+
+      <div>
+        <label for="gender-inp-w">Nemed</label>
+
+        <label for="gender-inp-w">nő</label>
+        <input type="radio" id="gender-inp-w" value="w" name="gender"/>
+
+        <label for="gender-inp-w">férfi</label>
+        <input type="radio" id="gender-inp-w" value="m" name="">
+      </div>
+      <div>
+        <label>Milyen márkákat szeretsz?</label>
+        <input type="checkbox" id="brand-1" name="brand[]" value="adidas">
+        <label for="brand-1">Adidas</label>
+        <input type="checkbox" id="brand-2" name="brand[]" value="nike">
+        <label for="brand-2">Nike</label>
+        <input type="checkbox" id="brand-3" name="brand[]" value="Apple">
+        <label for="brand-3">Apple</label>
+        <input type="checkbox" id="brand-4" name="brand[]" value="fubu">
+        <label for="brand-4">Fubu</label>
+        <input type="checkbox" id="brand-5" name="brand[]" value="soproni">
+        <label for="brand-5">Soproni</label>
+        <input type="checkbox" id="brand-6" name="brand[]" value="mazda">
+        <label for="brand-6">Mazda</label>
+        <small>Többet is kiválaszthatsz!</small>
+      </div>
+
+      </fieldset>
+      <fieldset>
+      <legend>Kapcsolat</legend>
+      <div>
+        <label for="phone-inp">Telefonszám <span>*</span></label>
+        <input type="text" id="phone-inp" name="name" placeholder="+36 -- --- ----" required />
+      </div>
+      <div>
+        <label for="email-inp">Email cím <span>*</span></label>
+        <input type="email" id="email-inp" name="email" placeholder="nev@domain.hu" required />
+      </div>
+      <div>
+        <label for="fb-inp">Facebook profilod</label>
+        <input type="text" id="fb-inp" name="fb" placeholder="http://facebook.com"/>
+      </div>
+      <div>
+        <label for="tw-inp">Twitter profilod</label>
+        <input type="text" id="tw-inp" name="tw" placeholder="http://twitter.com"/>
+      </div>
+
+      <div>
+        <label for="hometype-inp">Milyen házban laksz?</label>
+        <select id=hometype-inp name"hometype">
+          <option disabled selected>Válassz típust!</option>
+          <option value="1">Családi ház</option>
+          <option value ="2">Panel</option>
+          <option value ="3">Társasház</option>
+          <option value ="4">Kastély</option>
+          <option value ="5">Villa</option>
+          <option value ="6">Sajnos</option>
+          <option value ="7">Egyéb</option>
+        </select>
+      </div>
+      </fieldset>
+
+      <fieldset>
+        <div>
+          <label for="bio-inp">Bemutatkozás <span>*</span></label>
+          <textarea id="bio-inp" name="bio" placeholder="Írj amgadról pár mondatot!" required></textarea>
+        </div>
+        <div>
+          <label for="cv">CV feltöltés</label>
+          <input type="file" id="c-inp" name="cv" accept=".doc,.docx,.pdf,.xls" />
+        </div>
+
+        <fieldset>
+        <div>
+          <input type="hidden" name="agreement" value="0"/>
+          <input type="checkbox" name="agreement" id="agreement-inp" value="1"/>
+          <label for="agreement-inp">Elfogadoma a <a href="#"> felhasználási feltételeket <a/><span>*</span>
+          </label>
+        </div>
+        </fieldset>
+
+        <fieldset>
+        <div>
+          <input type="submit" name="save" value="Mentés">
+          <input type="reset" value="Űrlap törlése">
+        </div>
+        </fieldset>
+
+      </fieldset>
+
+    </form>
   </body>
-
 
 </html>
