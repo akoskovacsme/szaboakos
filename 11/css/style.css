@@ -1,0 +1,200 @@
+
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/Montserrat-Light-webfont.eot');
+    src: url('../fonts/Montserrat-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Montserrat-Light-webfont.woff2') format('woff2'),
+         url('../fonts/Montserrat-Light-webfont.woff') format('woff'),
+         url('../fonts/Montserrat-Light-webfont.ttf') format('truetype'),
+         url('../fonts/Montserrat-Light-webfont.svg#montserratlight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/Montserrat-Regular-webfont.eot');
+    src: url('../fonts/Montserrat-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Montserrat-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Montserrat-Regular-webfont.woff') format('woff'),
+         url('../fonts/Montserrat-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Montserrat-Regular-webfont.svg#montserratregular') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+
+body  {
+  color: #4a4261;
+  background-color: #dcd6cd;
+  font-family: 'montserrat';
+  font-size: 14px;
+  font-weight: 100 normal
+
+
+
+}
+
+
+.wrapper  {
+  width: 620px;
+  margin: 0 auto;
+  padding: 56px 0 0;
+}
+
+h1  {
+  font-family: 'montserrat';
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+form{
+  margin-bottom: 40px;
+
+}
+
+fieldset{
+  width: 300px;
+  float: left;
+}
+
+fieldset:first-child{
+  margin-right: 20px;
+}
+
+fieldset.wide{
+  width: 100%;
+  clear: both;
+
+}
+
+legend{
+  background-color: #938c97;
+  width: 100%;
+  height: 40px;
+  padding: 0 13px;
+  color: #fff;
+  border-radius: 2px;
+  line-height: 40px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+label{
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+label span{
+  color:  #dc5656;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+  width: 100%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border: 1px solid rgba(74, 66, 94, 0.5);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+  line-height: 40px;
+  height: 40px;
+}
+
+textarea {
+  width: 620px;
+  height: 165px;
+  padding: 10px 13px;
+  line-height: 20px;
+
+}
+
+fieldset > div {
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus{
+  border-color: rgba(74, 66, 94, 1);
+  outline: 0;
+
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+  margin: 0 5px 0 0;
+  position: relative;
+  top: 2px;
+}
+
+
+.halt input[type="text"]{
+  width: 80px;
+}
+
+.half{
+  width: 140px;
+  float: left;
+  margin-right: 20px;
+}
+
+.half + .half{
+  margin-right: 0;
+
+}
+
+.half label{
+  font-weight: normal;
+}
+
+.half label:first-child{
+  font-weight: bold;
+}
+
+div > .half label:first-child {
+  font-weight: normal;
+}
+
+
+.gender label {
+  width: 60px;
+  float: left;
+  line-height: 40px;
+}
+
+.gender label:first-child {
+  width: 100px;
+  margin-right: 20px;
+  line-height: 14px;
+}
+
+.gender label:first-child + label{
+  margin--right: 20px;
+}
+
+
+form small {
+  color: #999;
+  font-size: 14px;
+  clear: both;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
