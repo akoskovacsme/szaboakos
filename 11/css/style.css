@@ -33,7 +33,7 @@ body  {
   background-color: #dcd6cd;
   font-family: 'montserrat';
   font-size: 14px;
-  font-weight: 100 normal
+  font-weight: 700 normal
 
 
 
@@ -69,7 +69,9 @@ fieldset:first-child{
 
 fieldset.wide{
   width: 100%;
+  height: 100%;
   clear: both;
+  margin-top: 10px;
 
 }
 
@@ -137,12 +139,44 @@ input[type="tel"]:focus{
 
 }
 
-input[type="checkbox"],
-input[type="radio"]{
-  margin: 0 5px 0 0;
-  position: relative;
-  top: 2px;
+input[type="radio"] + label gender-inp-w,
+input[type="checkbox"] + label gender-inp-w{
+  vertical-align:middle;
+
 }
+
+input[type="radio"]{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+}
+
+input[type="checkbox"]{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+}
+
+
+select{
+  background-color: #fff;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 40px;
+  padding: 0 13px;
+  color: #938c97;
+  border-radius: 2px;
+  line-height: 40px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-color: #938c97;
+}
+
 
 
 .halt input[type="text"]{
@@ -197,4 +231,63 @@ form small {
   display: block;
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+input[type="submit"]{
+
+  background: #524969; /* Old browsers */
+  background: -moz-linear-gradient(top,  #524969 0%, #423b56 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#524969), color-stop(100%,#423b56)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #524969 0%,#423b56 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #524969 0%,#423b56 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #524969 0%,#423b56 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #524969 0%,#423b56 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#524969', endColorstr='#423b56',GradientType=0 ); /* IE6-9 */
+
+  border: 0;
+  color: #fff;
+  width: 220px;
+  height: 42px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  box-shadow: 0 3px #352F45;
+}
+
+input[type="reset"]{
+
+  background: #fff;
+  border: 1px #938C96 solid;
+  color: #4A4260;
+  width: 160px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 700 normal;
+  text-transform: uppercase;
+  border-radius: 2px;
+  box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.1);
+
+  float: right;
+}
+
+
+input[type="reset"]:hover{
+
+  background: url("http://www.sherv.net/cm/emo/funny/2/banana.gif") no-repeat;
+
+  border: 0;
+  color: transparent;
+  width: 160px;
+  height: 40px;
+  border: none
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-position: center;
+
+  float: right;
 }
