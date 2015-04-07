@@ -35,8 +35,6 @@ body  {
   font-size: 14px;
   font-weight: 700 normal
 
-
-
 }
 
 
@@ -125,6 +123,9 @@ textarea {
   height: 165px;
   padding: 10px 13px;
   line-height: 20px;
+  background-image: url(asset/patric.png)
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
 
