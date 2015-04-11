@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <meta charset="utf-8">
+  <title>Homework</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+  <body>
+    <div class="wrapper">
+
+
+      <form method="post" enctype="multipart/form-data">
+
+      <fieldset>
+        <legend>Bejelentkezés</legend>
+
+          <div>
+          <label for="form-name">Felhasználónév</label>
+          <input type="text" name="username" id="form-name" placeholder="superman2000" required>
+          </div>
+
+          <div>
+          <label for="form-password">Jelszó</label>
+          <input type="text" name="password" id="form-password"
+          placeholder="pl.: ********" required>
+          </div>
+
+          <div>
+          <label for="form-remember">
+            <input type="hidden" name="agreement" value="0"/>
+            <input type="checkbox" name="agreement" id="form-remember" value="1"/>
+            Jegyezd meg a jelszavam</label>
+            </div>
+
+
+          <input type="submit" name="login" value="Belépés">
+        </div>
+
+      </fieldset>
+
+    </div>
+
+  </body>
+
+</html>
