@@ -1,5 +1,6 @@
 body{
   background-color: #E4E4E4;
+  font-family: arial, helvetica;
 }
 
 header{
@@ -8,13 +9,17 @@ header{
 
 header h1{
   background-color: #898989;
-  font-size: 30px;
+  font-size: 50px;
   height: 130px;
   line-height: 130px;
   padding-left: 20px;
   color: #fff;
-  width: 1000px;
+  width: 960px;
   margin: 0 auto;
+}
+
+h1 a{
+  color: white;
 }
 
 nav{
@@ -31,20 +36,45 @@ nav{
 
 nav li{
   display: inline-block;
+  background-color: #AAAAAA;
   height: 38px;
   line-height: 40px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 14px;
+  padding-right: 14px;
   border: 1px solid #555555;
   color: white;
+  font-size: 20px;
+  margin-right: -5px;
 }
 
 nav li:hover{
-  background-color: #fff;
-  color: blue;
+  display: inline-block;
+  background-color: black;
+  color: #555555;
   font-weight: bold;
+  height: 38px;
+  line-height: 40px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border: 1px solid #555555;
+  font-size: 20px;
 }
 
+a{
+  text-decoration: none;
+  font-decoration: none;
+  color: red;
+}
+
+nav a{
+  color: white;
+}
+
+
+
+li{
+  list-style-type: none;
+}
 
 .menu{
   float: left;
@@ -53,14 +83,6 @@ nav li:hover{
 
 .social{
   float: right;
-}
-
-
-li{
-  list-style-type: none;
-  font-decoration: none;
-  color: black;
-
 }
 
 .menu{
@@ -72,23 +94,31 @@ li{
 }
 
 main{
-  width: 1000px;
-  background-color: #fff;
-  margin:0 auto;
+  width: 940px;
+  height: 800px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 40px 40px 20px 20px;
 }
 
-section{
-  padding: 30px;
-  background-color: #fff;
-  width: 700px;
+main section{
+  background-color: white;
+  width: 680px;
   float: right;
+  padding-top: 10px;
+}
+
+main a{
+  color: #667a9d;
 }
 
 .sidebar{
   padding: 10px;
   background-color: #E9EAF4;
-  width: 230px;
+  border-right: 30px solid #fff;
+  width: 210px;
   float: left;
+
 
 }
 
@@ -96,25 +126,50 @@ section{
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+
 }
 .sidebar li{
   margin: 0 0 10px 0;
+  text-decoration: underline;
 }
 
 .sidebar p{
   margin-bottom: 20px;
   line-height: 130%
-
-}
-.wrapper{
-  width: 1000px;
-  height: 880px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
 }
 
-header{
+.content h1{
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
 
+.content a h1{
+  color: black;
+}
+
+.details{
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+section p{
+  line-height: 120%;
+}
+
+.comment{
+  background-color: #E9EBF3;
+  height: 25px;
+  width: 110px;
+  border-radius: 2px;
+  line-height: 25px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+section div{
+  border-bottom: 1px solid #EDEFF5;
+  margin-bottom: 30px;
 }
